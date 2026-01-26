@@ -1,6 +1,6 @@
 - First Prize, 7th "China Merchants Futures Cup" Futures Training Camp, 2025.12
 
-- National Bronze Award, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2024.04
+- National Bronze Award, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2024.04[[Paper]](pdf/Reagan_resume.pdf)
 
 - Provincial Silver Award (2 items), 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2023.08
 

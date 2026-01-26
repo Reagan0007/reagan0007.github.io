@@ -1,6 +1,6 @@
 
 
-[![Reagan0007](https://img.shields.io/badge/Reagan0007-CV-blue?logo=prometheus&logoColor=f5f5f5)](pdf/Reagan_resume.pdf)
+[![Reagan0007](https://img.shields.io/badge/Reagan0007-RESUME-blue?logo=prometheus&logoColor=f5f5f5)](pdf/Reagan_resume.pdf)
 
 He is currently a postgraduate student in the Department of Finance at the School of Business, Southern University of Science and Technology(SUSTech).
 
