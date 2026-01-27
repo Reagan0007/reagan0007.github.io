@@ -16,4 +16,5 @@ B.Econ., Finance (CFA Track), School of Finance and Economics, Qinghai Universit
 Corporate Finance, Capital Markets, Financial Modeling, Derivatives, Complex Networks, Policy Effects
 
 #### Certificates
-
+Fund Industry Practitioner Qualification
+Primary Accounting Professional Qualification

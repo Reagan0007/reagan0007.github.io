@@ -12,7 +12,7 @@
 
 - National Third Prize, 13th "Zhengda Cup" National College Student Market Survey and Analysis Competition (), 2023.04[[Report]](static/assets/pdf/无人区大盗2.0.pdf)
 
-- Honorable Mention, 2023 Mathematical Contest In Modeling (MCM), 2023.02[[Problem]](2023美赛c题-预测Wordle结果-题目.pdf)[[Solution]](static/assets/pdf/2023美赛c题-预测Wordle结果.pdf)
+- Honorable Mention, 2023 Mathematical Contest In Modeling (MCM), 2023.02[[Problem]](static/assets/pdf/2023美赛c题-预测Wordle结果-题目.pdf)[[Solution]](static/assets/pdf/2023美赛c题-预测Wordle结果.pdf)
 
 - Provincial Second Prize, 2022 "FLTRP·ETIC Cup" National English Writing Competition, 2022.10
 

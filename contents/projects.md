@@ -2,7 +2,7 @@
 
 - Member, National Social Science Foundation Western Project — Study on the Correlation between Regional Public Brand Strength of Alpine Characteristic Agriculture and Animal Husbandry and the Modern Development of Smallholder Farmers, 2023.07–2025.06
 
-- Undergraduate Outstanding Thesis — Capital Market Opening and the Protection of Minority Shareholders' Interests: Empirical - Evidence from the “Shanghai-Hong Kong Stock Connect”, 2024.11–2025.05
+- Undergraduate Outstanding Thesis — Capital Market Opening and the Protection of Minority Shareholders' Interests: Empirical - Evidence from the “Shanghai-Hong Kong Stock Connect”, 2024.11–2025.05[[Thesis]](static/assets/pdf/资本市场开放与中小股东利益保护——来自沪港通的经验证据.pdf)
 
 - Member, Qinghai Provincial Development and Reform Commission Project — Research on the Target Indicator System for Qinghai's Economic and Social Development during the 15th Five-Year Plan Period, 2024.09–2024.11
 
