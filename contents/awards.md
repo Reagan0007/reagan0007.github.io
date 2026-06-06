@@ -10,7 +10,7 @@
 
 - National Second Prize, 20th "May Day Cup" Mathematical Modeling Contest, 2023.05[[Problem]](static/assets/pdf/2023五一b题-关于站点城市的物流评估、预测与规划-题目.pdf)[[Solution]](static/assets/pdf/2023五一b题-关于站点城市的物流评估、预测与规划.pdf)
 
-- National Third Prize, 13th "Zhengda Cup" National College Student Market Survey and Analysis Competition (), 2023.04[[Report]](static/assets/pdf/无人区大盗2.0.pdf)
+- National Third Prize, 13th "Zhengda Cup" National College Student Market Survey and Analysis Competition, 2023.04[[Report]](static/assets/pdf/无人区大盗2.0.pdf)
 
 - Honorable Mention, 2023 Mathematical Contest In Modeling (MCM), 2023.02[[Problem]](static/assets/pdf/2023美赛c题-预测Wordle结果-题目.pdf)[[Solution]](static/assets/pdf/2023美赛c题-预测Wordle结果.pdf)
 
