@@ -8,13 +8,13 @@ Email: reagan007[at]163.com
 
 #### Education
 
-M.S., Finance, School of Business, Southern University of Science and Technology, 2025.09—2027.07\
-&emsp;GPA 3.66/4.0. Quantitative Investment (A+), Financial Time Series Analysis (A-), Mathematical Finance (A+), Deep Learning & Large Models (A+), Data Science & Business Analytics (A+).\
-&emsp;First-Class Academic Scholarship; Special-Class Research Assistant Stipend.
+- **M.S., Finance** — School of Business, Southern University of Science and Technology, 2025.09–2027.07
+  - GPA 3.66/4.0. Quantitative Investment (A+), Financial Time Series Analysis (A-), Mathematical Finance (A+), Deep Learning & Large Models (A+), Data Science & Business Analytics (A+)
+  - First-Class Academic Scholarship; Special-Class Research Assistant Stipend
 
-B.A., Finance (CFA Track), School of Finance & Economics, Qinghai University, 2021.09—2025.06\
-&emsp;Rank 1/107, GPA 4.53/5.0 (93.5/100), CET-6. Corporate Finance (98), Securities Investment (98), Econometrics (95), Statistics (96), Advanced Mathematics (98).\
-&emsp;Yingcai Scholarship; Research & Innovation Scholarship; Outstanding Student Scholarship; Merit Student.
+- **B.A., Finance (CFA Track)** — School of Finance & Economics, Qinghai University, 2021.09–2025.06
+  - Rank 1/107, GPA 4.53/5.0 (93.5/100), CET-6. Corporate Finance (98), Securities Investment (98), Econometrics (95), Statistics (96), Advanced Mathematics (98)
+  - Yingcai Scholarship; Research & Innovation Scholarship; Outstanding Student Scholarship; Merit Student
 
 #### Research Interests
 

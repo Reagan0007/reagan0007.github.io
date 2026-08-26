@@ -49,7 +49,10 @@ section header h2{
     font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, var(--cjk-fallback), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     color: var(--h-title-color);
     font-size: 2.3rem;
-    line-height: 4rem;
+    /* Was line-height 4rem with Bootstrap's 8px bottom margin: acres of space
+       inside the heading, almost none between it and the text it introduces. */
+    line-height: 1.25;
+    margin-bottom: 1.6rem;
 }
 
 /* Body copy is tuned per language — see the html[lang] blocks below.
@@ -58,6 +61,10 @@ section .main-body{
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 2.4rem;
+    /* Cap the measure. Across the container's full 1022px the English body ran
+       ~107 characters per line — half again the 65-75 that reads comfortably.
+       em-based so it tracks whatever font-size the language sets. */
+    max-width: 37em;
 }
 
 /* Chinese needs different metrics from Latin:
@@ -71,6 +78,9 @@ html[lang^="zh"] section .main-body {
     font-weight: 400;
     line-height: 2.05;
     letter-spacing: 0.02em;
+    /* CJK glyphs are full-width, so one em is a whole character rather than
+       roughly two — the same em count carries about twice the text. */
+    max-width: 42em;
 }
 
 html[lang^="zh"] section header h2 {
@@ -198,6 +208,32 @@ section .main-body li {
 
 section .main-body strong {
     font-weight: 600;
+}
+
+/* `####` sub-headings (Contact, Education, ...) rendered as an undifferentiated
+   Bootstrap h4 and read as body text. Give them a real step in the hierarchy. */
+section .main-body h4 {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: var(--h-title-color);
+    margin: 2.4rem 0 0.9rem;
+}
+
+/* Latin picks up the tracked-caps treatment the section headings already use;
+   uppercase and wide tracking do nothing good for CJK. */
+html[lang="en"] section .main-body h4 {
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+section .main-body > *:first-child {
+    margin-top: 0;
+}
+
+/* The resume badge sits alone on the first line — let it breathe. */
+section .main-body > p:first-child {
+    margin-bottom: 1.8rem;
 }
 
 /* Nested bullets carry the per-project method notes — step them back so the
