@@ -12,7 +12,7 @@
   - 模型方法：基于协整检验与向量误差修正模型（VEC）刻画保险市场发展与城乡收入差距的长期均衡关系
   - 研究结论：实证检验保险市场发展对城乡收入差距的"保障"与"分化"双重影响，独立完成从选题到成稿全流程 [[论文]](/static/assets/pdf/保障与分化：保险市场发展对城乡收入差距的双重影响.pdf)
 
-- **英文论文（CPCI）**，第一作者 —— 《Chemical Composition Analysis of Ancient Glass Based on CLR》，2023.02–2023.07
+- **英文论文（CPCI）**，第一作者 —— 《Study on the Influence of Weathering Process on the Chemical Composition of Ancient Glass Based on CLR》，2023.02–2023.07
   - 研究方法：基于中心化对数比变换（CLR）处理成分数据，分析古代玻璃制品化学成分与风化关联特征
   - 成果：论文被 CPCI 国际会议收录，为第一作者（共 3 位作者），独立完成数据分析与初稿撰写
 
