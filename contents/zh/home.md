@@ -18,12 +18,33 @@
 
 #### 研究兴趣
 
-公司金融、资本市场、金融建模、金融衍生品、复杂网络、政策效应
+<ul class="tag-list">
+<li>公司金融</li>
+<li>资本市场</li>
+<li>金融建模</li>
+<li>金融衍生品</li>
+<li>复杂网络</li>
+<li>政策效应</li>
+</ul>
 
 #### 计算机能力
 
-Python、Stata、SPSS、MATLAB、C、EViews、Office；Bloomberg 与 Wind 数据终端
+<ul class="tag-list">
+<li>Python</li>
+<li>Stata</li>
+<li>SPSS</li>
+<li>MATLAB</li>
+<li>C</li>
+<li>EViews</li>
+<li>Office</li>
+<li>Bloomberg / Wind 终端</li>
+</ul>
 
 #### 职业资格
 
-期货从业资格、基金从业资格、证券从业资格、初级会计职称
+<ul class="tag-list">
+<li>期货从业资格</li>
+<li>基金从业资格</li>
+<li>证券从业资格</li>
+<li>初级会计职称</li>
+</ul>

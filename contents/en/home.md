@@ -18,12 +18,33 @@ Email: reagan007[at]163.com
 
 #### Research Interests
 
-Corporate Finance, Capital Markets, Financial Modeling, Derivatives, Complex Networks, Policy Effects
+<ul class="tag-list">
+<li>Corporate Finance</li>
+<li>Capital Markets</li>
+<li>Financial Modeling</li>
+<li>Derivatives</li>
+<li>Complex Networks</li>
+<li>Policy Effects</li>
+</ul>
 
 #### Technical Skills
 
-Python, Stata, SPSS, MATLAB, C, EViews, Microsoft Office; Bloomberg & Wind data terminals
+<ul class="tag-list">
+<li>Python</li>
+<li>Stata</li>
+<li>SPSS</li>
+<li>MATLAB</li>
+<li>C</li>
+<li>EViews</li>
+<li>Microsoft Office</li>
+<li>Bloomberg / Wind</li>
+</ul>
 
 #### Certifications
 
-Futures Practitioner, Fund Practitioner, Securities Practitioner, Junior Accountant
+<ul class="tag-list">
+<li>Futures Practitioner</li>
+<li>Fund Practitioner</li>
+<li>Securities Practitioner</li>
+<li>Junior Accountant</li>
+</ul>

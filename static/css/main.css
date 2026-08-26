@@ -26,11 +26,10 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Without this, clicking a nav link lands the section heading underneath
-   the ~74px fixed navbar. */
-section[id] {
-    scroll-margin-top: 92px;
-}
+/* Anchor offsets: the theme already sets `html { scroll-padding-top: 4.5rem }`
+   (=72px, matching the 74px navbar). Adding scroll-margin-top here would
+   STACK with it (browsers apply both), landing sections 164px down — so
+   deliberately no scroll-margin rule of our own. */
 
 
 /* ── Navbar active section ────────────────────────────────────────────────── */
@@ -66,6 +65,14 @@ footer.bg-bottom .text-white-50 {
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
+/* The theme ships `footer a { color: rgba(255,255,255,.5) }` — same 2.4:1
+   contrast problem as the text above. */
+footer.bg-bottom a,
+footer.bg-bottom a:hover {
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-decoration: none;
+}
+
 .top-section {
     position: relative;
     padding: 10rem 0;
@@ -80,6 +87,19 @@ footer.bg-bottom .text-white-50 {
        over the photo's bright patches. */
     letter-spacing: 0.14em;
     text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+    animation: heroIn 0.7s ease-out 0.15s both;
+}
+
+@keyframes heroIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 /* CJK ideographs are dense; the Latin tracking above reads as nothing on them. */
@@ -194,7 +214,12 @@ html[lang^="zh"] section header h2 {
 #avatar img {
     height: max(130px,min(200px,calc(100vw/6)));
     border-radius: 8px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* The photo straddles the hero/home boundary — a white ring makes the
+       crop read as a deliberate frame instead of a floating rectangle.
+       !important: the img also carries Bootstrap's .shadow utility, and
+       those ship !important themselves. */
+    box-shadow: 0 0 0 4px #fff, 0 10px 28px rgba(0, 0, 0, 0.28),
+        0 2px 6px rgba(0, 0, 0, 0.15) !important;
     background: #fff;
 }
 
@@ -298,9 +323,27 @@ section .main-body > *:first-child {
     margin-top: 0;
 }
 
-/* The resume badge sits alone on the first line — let it breathe. */
-section .main-body > p:first-child {
+/* The resume badge sits alone on the first line — let it breathe.
+   Scoped to #home-md: experience entries also start with a <p>, and this
+   rule was giving the first one a different gap than the rest. */
+#home-md > p:first-child {
     margin-bottom: 1.8rem;
+}
+
+/* Experience entries are <p>title</p> + <ul>bullets</ul> pairs. With the
+   browser's default margins the gap before a title equals the gap after it,
+   so the three entries blur into one list. Hug each title to its bullets,
+   then pull the next title away. */
+#experience-md > p {
+    margin: 1.7rem 0 0.45rem;
+}
+
+#experience-md > p:first-child {
+    margin-top: 0;
+}
+
+#experience-md > ul {
+    margin-bottom: 0.2rem;
 }
 
 
@@ -439,6 +482,31 @@ section .main-body ul ul {
 
 section .main-body ul ul li {
     margin-bottom: 0.15rem;
+}
+
+/* Interests / skills / certifications arrive as raw <ul class="tag-list">
+   in home.md — tinted chips, a shade apart from the outlined attachment
+   pills so the two read as different kinds of thing. */
+#home-md ul.tag-list,
+ul.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    padding: 0;
+    margin: 0 0 0.6rem;
+}
+
+ul.tag-list li {
+    margin: 0;
+    padding: 0.2rem 0.85rem;
+    border: 1px solid rgba(57, 72, 210, 0.2);
+    border-radius: 999px;
+    background-color: rgba(57, 72, 210, 0.07);
+    color: var(--h-title-color);
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.65;
 }
 
 
