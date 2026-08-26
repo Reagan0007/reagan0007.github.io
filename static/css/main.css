@@ -1,8 +1,12 @@
-@import "./styles.css";
-
+/* styles.css is already loaded via <link> in index.html — no @import needed here. */
 
 :root{
     --h-title-color:#3948d2;
+
+    /* Mulish/Kanit carry no CJK glyphs; append system CJK faces so the
+       Chinese version falls back to a real UI font instead of a serif default. */
+    --cjk-fallback: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+    --bs-body-font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, var(--cjk-fallback), Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .header {
@@ -42,7 +46,7 @@
 }
 
 section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, var(--cjk-fallback), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     color: var(--h-title-color);
     font-size: 2.3rem;
     line-height: 4rem;
@@ -107,6 +111,73 @@ section .main-body{
     #avatar {
         margin: 0;
     }
+}
+
+
+/* ── Language switch (top-right of the navbar) ────────────────────────────── */
+
+.lang-switch {
+    display: inline-flex;
+    align-items: stretch;
+    border: 1px solid var(--h-title-color);
+    border-radius: 999px;
+    overflow: hidden;
+    /* Below lg the navbar wraps: push the switch next to the MENU toggler. */
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+
+.lang-switch button {
+    background: transparent;
+    border: 0;
+    padding: 0.3rem 0.75rem;
+    color: var(--h-title-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.lang-switch button:hover {
+    background-color: rgba(57, 72, 210, 0.12);
+}
+
+.lang-switch button:focus-visible {
+    outline: 2px solid var(--h-title-color);
+    outline-offset: 2px;
+}
+
+.lang-switch button[aria-pressed="true"] {
+    background-color: var(--h-title-color);
+    color: #fff;
+    cursor: default;
+}
+
+@media screen and (min-width: 992px) {
+    .lang-switch {
+        /* Flex order pushes the switch past the (DOM-earlier) nav list so it
+           lands at the far right on desktop. */
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* ── Section body tweaks ──────────────────────────────────────────────────── */
+
+section .main-body ul {
+    padding-left: 1.4rem;
+}
+
+section .main-body li {
+    margin-bottom: 0.35rem;
+}
+
+section .main-body strong {
+    font-weight: 600;
 }
 
 
