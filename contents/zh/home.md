@@ -1,4 +1,4 @@
-[![Reagan0007](https://img.shields.io/badge/%E6%9D%8E%E6%A0%B9-%E7%AE%80%E5%8E%86-blue?logo=prometheus&logoColor=f5f5f5)](static/assets/pdf/Reagan_Li_CV_CN.pdf)
+[![Reagan0007](https://img.shields.io/badge/%E6%9D%8E%E6%A0%B9-%E7%AE%80%E5%8E%86-blue?logo=prometheus&logoColor=f5f5f5)](/static/assets/pdf/Reagan_Li_CV_CN.pdf)
 
 现为南方科技大学商学院金融系硕士研究生。金融 + 数据复合背景，擅长用 Python 将业务问题拆解为可验证的数据分析，在量化研究、财富管理与审计多段实习中积累了从数据到报告的端到端交付经验。
 

@@ -1,4 +1,4 @@
-[![Reagan0007](https://img.shields.io/badge/Reagan-CV-blue?logo=prometheus&logoColor=f5f5f5)](static/assets/pdf/Reagan_Li_CV_EN.pdf)
+[![Reagan0007](https://img.shields.io/badge/Reagan-CV-blue?logo=prometheus&logoColor=f5f5f5)](/static/assets/pdf/Reagan_Li_CV_EN.pdf)
 
 He is currently a postgraduate student in the Department of Finance at the School of Business, Southern University of Science and Technology (SUSTech). His work sits at the intersection of finance and data: turning business questions into verifiable empirical analysis with Python, across quantitative research, wealth management and audit.
 

@@ -52,10 +52,30 @@ section header h2{
     line-height: 4rem;
 }
 
+/* Body copy is tuned per language — see the html[lang] blocks below.
+   These are the Latin defaults. */
 section .main-body{
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2.4rem;
+}
+
+/* Chinese needs different metrics from Latin:
+   - CJK faces ship no 200/300 weight, so the template's ExtraLight renders
+     either anaemic or silently falls back; 400 is the real body weight.
+   - CJK glyphs fill the full em box, so they read larger than Latin at the
+     same px — step the size down rather than up.
+   - Dense glyphs need more leading and a little tracking to stay legible. */
+html[lang^="zh"] section .main-body {
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 2.05;
+    letter-spacing: 0.02em;
+}
+
+html[lang^="zh"] section header h2 {
+    font-size: 2.1rem;
+    letter-spacing: 0.02em;
 }
 
 
@@ -127,29 +147,29 @@ section .main-body{
     margin-right: 0.75rem;
 }
 
-.lang-switch button {
-    background: transparent;
-    border: 0;
+.lang-switch a {
+    display: inline-block;
     padding: 0.3rem 0.75rem;
     color: var(--h-title-color);
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.4;
-    cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-.lang-switch button:hover {
+.lang-switch a:hover {
     background-color: rgba(57, 72, 210, 0.12);
+    color: var(--h-title-color);
 }
 
-.lang-switch button:focus-visible {
+.lang-switch a:focus-visible {
     outline: 2px solid var(--h-title-color);
     outline-offset: 2px;
 }
 
-.lang-switch button[aria-pressed="true"] {
+.lang-switch a[aria-current="page"] {
     background-color: var(--h-title-color);
     color: #fff;
     cursor: default;
@@ -178,6 +198,19 @@ section .main-body li {
 
 section .main-body strong {
     font-weight: 600;
+}
+
+/* Nested bullets carry the per-project method notes — step them back so the
+   project titles stay the dominant level. */
+section .main-body ul ul {
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+section .main-body ul ul li {
+    margin-bottom: 0.15rem;
 }
 
 
