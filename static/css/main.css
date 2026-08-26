@@ -14,8 +14,56 @@
     z-index: 10000;
 }
 
+/* Kanit (font-alt) has no CJK either — give the hero word a real Chinese face. */
+.font-alt {
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, var(--cjk-fallback), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+
+/* ── Anchor navigation ────────────────────────────────────────────────────── */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Without this, clicking a nav link lands the section heading underneath
+   the ~74px fixed navbar. */
+section[id] {
+    scroll-margin-top: 92px;
+}
+
+
+/* ── Navbar active section ────────────────────────────────────────────────── */
+
+/* Bootstrap's only active treatment is a color nudge from rgba(0,0,0,.65)
+   to rgba(0,0,0,.9) — invisible in practice. Add a real indicator. */
+#mainNav .nav-link {
+    position: relative;
+}
+
+#mainNav .nav-link.active {
+    color: var(--h-title-color);
+}
+
+#mainNav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.15rem;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--h-title-color);
+}
+
 .bg-bottom {
     background-color: var(--h-title-color);
+}
+
+/* text-white-50 on this blue is a ~2.4:1 contrast ratio — well under the
+   4.5:1 WCAG AA floor for small text. */
+footer.bg-bottom .text-white-50 {
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .top-section {
@@ -28,6 +76,15 @@
 
 .top-section h2 {
     font-weight: 400;
+    /* Lone-word hero: tracking gives it presence, shadow keeps it crisp
+       over the photo's bright patches. */
+    letter-spacing: 0.14em;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* CJK ideographs are dense; the Latin tracking above reads as nothing on them. */
+html[lang^="zh"] .top-section h2 {
+    letter-spacing: 0.35em;
 }
 
 .top-section .top-section-content {
@@ -35,6 +92,8 @@
     z-index: 1;
 }
 
+/* Flat 50% black flattened the photo; a vertical gradient keeps the sky
+   breathing while grounding the headline where it sits. */
 .top-section:before {
     content: "";
     position: absolute;
@@ -42,7 +101,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.62) 100%);
 }
 
 section header h2{
@@ -134,7 +193,9 @@ html[lang^="zh"] section header h2 {
 
 #avatar img {
     height: max(130px,min(200px,calc(100vw/6)));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.15);
+    background: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -206,6 +267,12 @@ section .main-body li {
     margin-bottom: 0.35rem;
 }
 
+/* Current marked wraps list-item text in <p>, whose 1rem bottom margin stacks
+   with the li's own margin — every item ended up double-spaced. */
+section .main-body li > p {
+    margin-bottom: 0;
+}
+
 section .main-body strong {
     font-weight: 600;
 }
@@ -234,6 +301,131 @@ section .main-body > *:first-child {
 /* The resume badge sits alone on the first line — let it breathe. */
 section .main-body > p:first-child {
     margin-bottom: 1.8rem;
+}
+
+
+/* ── Links ────────────────────────────────────────────────────────────────── */
+
+section .main-body a {
+    color: var(--h-title-color);
+    text-decoration-color: rgba(57, 72, 210, 0.35);
+    text-underline-offset: 0.22em;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        transform 0.15s ease-in-out;
+}
+
+/* Attachment links inside list items (论文/赛题/Thesis/Problem/...) become
+   quiet pills so they read as buttons, not stray bracketed text.
+   Descendant selector, not child: marked wraps item text in <p>. */
+section .main-body li a {
+    display: inline-block;
+    padding: 0.08rem 0.7rem;
+    margin: 0 0.12rem;
+    border: 1px solid rgba(57, 72, 210, 0.35);
+    border-radius: 999px;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.7;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+section .main-body li > a:hover {
+    background-color: var(--h-title-color);
+    border-color: var(--h-title-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main-body li > a:focus-visible {
+    outline: 2px solid var(--h-title-color);
+    outline-offset: 2px;
+}
+
+/* The CV download is the one link on its own line — promote it to a button. */
+section .main-body > p:first-child a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1.35rem;
+    border-radius: 999px;
+    background-color: var(--h-title-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.88em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(57, 72, 210, 0.32);
+}
+
+section .main-body > p:first-child a::before {
+    content: "↓";
+    font-weight: 700;
+}
+
+section .main-body > p:first-child a:hover {
+    background-color: #2a37a8;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(57, 72, 210, 0.38);
+}
+
+section .main-body > p:first-child a:focus-visible {
+    outline: 2px solid #1d29a0;
+    outline-offset: 3px;
+}
+
+
+/* ── Ambient details ──────────────────────────────────────────────────────── */
+
+::selection {
+    background-color: var(--h-title-color);
+    color: #fff;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--h-title-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+/* Someone hitting print gets a clean document, not a photo banner
+   and a fixed navbar chopped across every page. */
+@media print {
+    #mainNav,
+    .lang-switch,
+    .top-section,
+    footer {
+        display: none;
+    }
+
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #avatar {
+        top: 0;
+    }
+
+    section .main-body {
+        font-size: 11pt;
+        line-height: 1.6;
+    }
 }
 
 /* Nested bullets carry the per-project method notes — step them back so the
