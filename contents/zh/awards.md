@@ -1,6 +1,6 @@
 #### 期货实训
 
-- **一等奖（150+ 人中第 3）**，第七期"招商期货杯"期货训练营，2025.12 [查看](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
+- **一等奖（三名一等奖之一）**，第七期"招商期货杯"期货训练营，2025.12 [查看](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
 
 #### 数学建模
 
