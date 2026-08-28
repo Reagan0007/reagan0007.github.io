@@ -1,12 +1,12 @@
 [Download CV](/static/assets/pdf/Reagan_Li_CV_EN.pdf)
 
-I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology, graduating in 2027. Before that I studied Finance at Qinghai University and finished first in a cohort of 107.
+I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology, graduating in 2027. I did my undergraduate degree in Finance at Qinghai University, finishing first in a cohort of 107.
 
-What I do comes down to this: take a fuzzy business question, turn it into one that data can answer, do the work in Python, and write it up so people can actually read it. So far that road has run through futures timing, client asset allocation, and audit data verification.
+One problem stayed with me through my undergraduate years: finance theory and data felt disconnected. I could follow the models, but turning them loose on real data myself was another matter. That gap is largely what I came to graduate school to close - coursework in quantitative methods, and internships chosen for the data work in them: factor timing and backtesting at a futures firm, asset-allocation analysis at a securities firm, audit data verification at an accounting firm. Getting the data, cleaning it, modeling it, writing it up - I can now carry that whole process on my own.
 
-I also have a habit I can't shake: do a repetitive task twice and I'll automate it. At one internship my mentor spent half an hour every day on a precious-metals report; after I got to it, the whole thing was one click. My own weekly deliverables run through workflows I built myself.
+Using AI to improve how I work is something I take seriously as well. At China Merchants Futures I automated my mentor's precious-metals daily report, cutting it from half an hour to minutes; in my current internship the fixed-format parts of my weekly deliverables run through workflows I built.
 
-I'm looking for quantitative research and data analysis roles, internships and new-graduate positions alike. Email me at [reagan007[at]163.com](mailto:reagan007@163.com).
+I'm looking for quantitative research and data analysis roles - internships and new-graduate positions. Feel free to email me at [reagan007[at]163.com](mailto:reagan007@163.com).
 
 #### Education
 
@@ -27,7 +27,6 @@ I'm looking for quantitative research and data analysis roles, internships and n
 <li>Derivatives</li>
 <li>Complex Networks</li>
 <li>Policy Effects</li>
-<li>AI Applications</li>
 </ul>
 
 #### Technical Skills
@@ -54,6 +53,6 @@ I'm looking for quantitative research and data analysis roles, internships and n
 
 #### Beyond Work
 
-In January 2026 a friend said, out of nowhere, that we should cycle around Hainan Island. I ordered the bike that day. It arrived the day before departure, I did one 23 km practice ride, and off we went. Eight days, roughly 150 km each, all the way around. Genuinely exhausting, and worth every day of it.
+In January 2026 a friend and I cycled around Hainan Island - eight days, about 150 km a day. The decision was made on short notice and the bike arrived the day before we left, with just one 23 km practice ride in between. The legs turned out not to be the hard part; keeping the rhythm for eight straight days was.
 
-Off the bike, I'm usually in Elden Ring.
+Away from code and the bike, I'm usually playing single-player games - Elden Ring, most recently.
