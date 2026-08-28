@@ -4,7 +4,7 @@ I'm Reagan Li, a Finance master's student at the School of Business, Southern Un
 
 The way I work is to first think the process through - what steps it takes and where each step can be improved - then carry it out step by step. All three internships have involved data work: factor timing and backtesting at a futures firm, client asset-allocation analysis at a securities firm, audit data verification at an accounting firm.
 
-For repetitive, fixed-format work I build automated workflows - for example, automating my mentor's daily precious-metals report, which took about 20 minutes a day, down to under 5 minutes.
+I use AI and automated workflows to work faster - handing the repetitive, mechanical parts to the tools, keeping the judgment and analysis with me. Faster, without letting quality slip.
 
 I'm currently looking at internship and new-graduate opportunities. Feel free to email me at [reagan007[at]163.com](mailto:reagan007@163.com).
 
@@ -55,6 +55,6 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 
 #### Beyond Work
 
-In January 2026 a friend and I cycled around Hainan Island in a week. The route itself is about 1000 km; with detours along the way, it came to about 150 km a day.
+I enjoy adventure and a challenge. In January 2026 I cycled around Hainan Island in a week - 988 km in all.
 
 Outside study and work, I like to relax with single-player games - Elden Ring, most recently.
