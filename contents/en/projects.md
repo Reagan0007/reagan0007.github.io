@@ -1,40 +1,38 @@
-Two kinds of research below: papers I carried from idea to final draft on my own, and funded projects I contributed to as a team member. A third group collects data and AI projects where I put engineering to work on real data. Full texts of the papers are downloadable.
+The papers here I carried from idea to final draft on my own; full texts are downloadable. The funded projects I joined as a member get one line each about my part. In between, a few data and AI projects that are closer to what I tinker with day to day.
 
-#### Independent Research
+#### Papers
 
-- **Master's Thesis (in progress)** - *Tax Administration Digitalization and Executive Perquisite Consumption: Evidence from the Blockchain E-Invoice Pilot*, 2026-2027
-  - Uses the blockchain e-invoice pilot as a quasi-natural experiment, continuing my "policy pilot + firm behavior" DID research line.
+- **Master's thesis (in progress)** - *Tax Administration Digitalization and Executive Perquisite Consumption: Evidence from the Blockchain E-Invoice Pilot*, 2026-2027
+  - The blockchain e-invoice pilot as a quasi-natural experiment, continuing the "policy pilot + firm behavior" DID line I've been on.
 
-- **Undergraduate Thesis (awarded Outstanding)** - *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2024.11-2025.05
-  - Built a multi-period difference-in-differences (DID) model around the Stock Connect launch as a quasi-natural experiment, testing whether capital-market opening disciplines controlling-shareholder tunneling. It does - the effect is significant.
-  - Robustness checks, mechanism analysis and heterogeneity analysis all done independently. [Thesis](/static/assets/pdf/资本市场开放与中小股东利益保护--来自沪港通的经验证据.pdf)
+- **Undergraduate thesis (Outstanding Thesis award)** - *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2024.11-2025.05
+  - A multi-period DID around the Stock Connect launch, asking whether opening up the market disciplines controlling-shareholder tunneling. It does, significantly.
+  - [Full text](/static/assets/pdf/资本市场开放与中小股东利益保护--来自沪港通的经验证据.pdf)
 
-- **Insurance and the Urban-Rural Income Gap** (sole author), 2024.03-2024.08
-  - Used cointegration tests and a Vector Error Correction Model (VEC) to capture the long-run equilibrium between insurance development and the urban-rural income gap.
-  - Found both a "security" effect and a "divergence" effect at work, and carried the study from topic selection to final draft alone. [Paper](/static/assets/pdf/保障与分化：保险市场发展对城乡收入差距的双重影响.pdf)
+- **Insurance and the urban-rural income gap**, 2024.03-2024.08
+  - Cointegration tests and a VEC model for the long-run relationship between insurance development and the income gap.
+  - Both effects show up: insurance density narrows the gap, insurance depth widens it. [Full text](/static/assets/pdf/保障与分化：保险市场发展对城乡收入差距的双重影响.pdf)
 
-- **CPCI Conference Paper (English, first author)** - *Study on the Influence of Weathering Process on the Chemical Composition of Ancient Glass Based on CLR*, 2023.02-2023.07
-  - Processed compositional data with a Centered Log-Ratio (CLR) transformation to link ancient-glass chemistry to weathering processes.
-  - Accepted by a CPCI-indexed international conference. First of three authors, responsible for data analysis and the initial draft.
+- **CPCI conference paper (first author)** - *Study on the Influence of Weathering Process on the Chemical Composition of Ancient Glass Based on CLR*, 2023.02-2023.07
+  - This one grew out of a math-modeling contest problem: a Centered Log-Ratio transformation on compositional data, linking weathering to ancient-glass chemistry. Written up in English after the contest and accepted by a CPCI conference.
 
-- **Digital Finance and the Monetary-Policy Credit Channel** - Qinghai Financial Society key project, responsible for the firm-level empirics, 2024.04-2024.11
-  - Built fixed-effects models on 2011-2021 panel data of commercial banks and A-share listed companies.
-  - Traced the bank-lending and corporate balance-sheet channels through which digital finance affects credit transmission; co-wrote the concluding report.
+- **Digital finance and the monetary-policy credit channel** - Qinghai Financial Society key project, firm-level empirics, 2024.04-2024.11
+  - Fixed-effects models on 2011-2021 panel data of commercial banks and A-share listed companies, tracing the bank-lending and balance-sheet channels of credit transmission.
 
 #### Data & AI
 
-- **CPA Mobility Data Engineering** (advisor's project), 2025-2026
-  - No public data exists on how certified public accountants move between firms. Starting from lists disclosed by provincial CPA institutes, I collected 887 messy files (scans and photos included) and built an extraction pipeline: OCR to text, chunked AI extraction to JSON, and three APIs called in parallel to cross-check each other - the reconstructed registry came out over 98% accurate.
+- **CPA mobility data engineering** (advisor's project), 2025-2026
+  - No public data exists on how CPAs move between firms, so the project rebuilt it from scratch. Starting from lists disclosed by provincial CPA institutes, I collected 887 messy files (scans and photos included) and built one pipeline: OCR to text, chunked AI extraction, three models called in parallel to cross-check each other. The reconstructed registry came out over 98% accurate.
 
-- **POMO Neural TSP Solver** (Deep Learning & Large Models course project, team of four)
-  - Added DPO-style preference learning and curriculum learning on top of the POMO reinforcement-learning baseline; 0.478% optimality gap on the TSPLIB hold-out set, a ~77% relative improvement over the 2.048% baseline. Full LaTeX reports (Chinese and English) plus code.
+- **POMO neural TSP solver** (course project, team of four)
+  - DPO-style preference learning and curriculum learning on top of the POMO reinforcement-learning baseline; 0.478% optimality gap on the TSPLIB hold-out set, against a 2.048% baseline.
 
-- **AI News Workflow** (personal project, n8n)
-  - Scrapes a dozen tech sites for AI news daily, normalizes it into a Feishu database via AI, picks the ten most valuable items and pushes them to a group chat.
+- **AI news workflow** (personal project, n8n)
+  - Scrapes a dozen tech sites daily, normalizes the AI news into a database, picks the ten worth reading, and pushes them out.
 
 #### Project Contributions
 
-- **National Social Science Fund (Western Project)** - *Regional Public Brands and Smallholder Modernization*: scale design (5 dimensions, 25 indicators), reliability and validity testing, SEM estimation, 2023.07-2025.06
-- **Qinghai Social Science Fund** - *Governance Capacity and Human-Resource Guarantee*: built a 22-indicator evaluation system, ran correlation and regression analyses, 2022.05-2023.02
-- **Qinghai Development & Reform Commission** - *15th Five-Year Plan indicator system*: indicator selection, definitions and target forecasting, 2024.09-2024.11
-- **Qinghai Statistics Bureau** - *Child-population analysis from the 7th census*: data cleaning, aggregation and cross-checking, 2022.10-2022.11
+- **National Social Science Fund (Western Project)** - *Regional Public Brands and Smallholder Modernization*: scale design and SEM estimation, 2023.07-2025.06
+- **Qinghai Social Science Fund** - *Governance Capacity and Human-Resource Guarantee*: evaluation-system construction and regression analysis, 2022.05-2023.02
+- **Qinghai Development & Reform Commission** - *15th Five-Year Plan indicator system*: indicator selection and target forecasting, 2024.09-2024.11
+- **Qinghai Statistics Bureau** - *Child-population analysis from the 7th census*: data cleaning and cross-checking, 2022.10-2022.11

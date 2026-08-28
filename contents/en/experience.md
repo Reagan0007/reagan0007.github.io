@@ -1,19 +1,19 @@
 **Guoyuan Securities** - Buy-Side Investment Advisory Intern, Wealth Management Division, 2026.07-Present
 
-- Profiled one simulated client per week, delivering an independent asset-allocation report from risk profiling to product selection, covering financial products and margin financing.
-- Attended daily pre-market meetings and wrote the minutes; produced monthly industry and strategy reports. Tracked a simulated portfolio throughout and shadowed advisors on client visits and roadshows.
-- Fed fixed-format deliverables (minutes drafts, data prep) into an AI workflow I built myself, spending my own time on judgment and the final copy.
+- Profiled one simulated client per week, from risk profiling to product selection, and wrote the asset-allocation report myself.
+- Daily pre-market minutes, monthly industry and strategy reports, ongoing portfolio tracking, and client visits and roadshows alongside my mentor.
+- Fixed-format chores (minutes drafts, data prep) run through an AI workflow I built; my own time goes to judgment and the final copy.
 
 **China Merchants Futures** - Quantitative Research Intern, Industry Research Division, 2026.04-2026.07
 
-- Reviewed the WorldQuant Alpha101 factor library, dropped cross-sectional factors unsuited to futures, and selected 19 timing factors based on time-series price and volume.
-- Wrote the backtesting code myself: rolling-quantile dynamic thresholds, in-sample training and out-of-sample validation on gold and 5/10/30-year treasury futures. Optimized parameters against an out-of-sample/in-sample Sharpe ratio > 0.6 hurdle - 12 configurations passed. The best evidence the method actually controls overfitting: gold alpha049's out-of-sample Sharpe went up, not down (1.18 -> 1.79).
-- Automated my mentor's precious-metals daily report: Wind data auto-refresh + web scraping + AI first-pass analysis, generating the draft in one click - 30 minutes of work down to under 5.
-- Handled daily-frequency data cleaning, descriptive statistics and cross-asset analysis for gold and treasury futures; assisted with daily gold-market commentary using Wind / Bloomberg terminals.
+- Reviewed the WorldQuant Alpha101 factor library, dropped cross-sectional factors that make no sense for futures, and kept 19 time-series price-volume timing factors.
+- Wrote the backtest code myself: rolling-quantile dynamic thresholds, in-sample training and out-of-sample validation on gold and 5/10/30-year treasury futures, parameter screening against an out-of-sample/in-sample Sharpe > 0.6 hurdle. 12 configurations survived. The overfitting control is real: gold alpha049's out-of-sample Sharpe went from 1.18 up to 1.79.
+- My mentor spent half an hour a day on a precious-metals report; I made it one click. Data refreshes itself, news gets scraped, AI drafts, he skims and sends.
+- Daily data cleaning and cross-asset analysis for gold and treasury futures, help with daily gold-market commentary, Wind and Bloomberg terminals all day.
 
 **Pan-China Certified Public Accountants (Hangzhou HQ)** - Audit Intern, 2025.01-2025.04
 
-- Worked on annual audits of 3 companies plus an IPO. During the IPO's bank-flow verification of directors and senior managers, I chased down a dormant account at a bank where an executive claimed to have never opened one; the full statement confirmed ordinary personal transfers.
-- On a mining subsidiary's annual audit, one staff auditor and I covered the entire company between the two of us: a full year of vouchers, fixed-asset counts across plant and mine, cut-off tests - and handled the revenue-recognition timing issue we found under the materiality principle.
-- In the final phase of a large electronics group's audit, I independently prepared working papers for some accounts of 3 overseas subsidiaries, including documents in English and Arabic.
-- Wrote Python scripts to batch-verify financial data, helping the team spot anomalies and errors faster.
+- Annual audits of 3 companies plus an IPO. During the IPO's bank-flow verification of directors and senior managers, one executive said he'd never opened an account at a certain bank; I found a dormant account there in the bank's feedback, pulled the full statement, and confirmed ordinary personal transfers.
+- A mining subsidiary's annual audit was done by one staff auditor and me, end to end: a full year of vouchers, fixed-asset counts across plant and mine, cut-off tests, and the revenue-timing issue we found, handled under the materiality principle.
+- Later I prepared working papers for several accounts of 3 overseas subsidiaries on my own, documents in English and Arabic included.
+- Wrote Python scripts to batch-verify financial data, so anomalies and errors surface faster.

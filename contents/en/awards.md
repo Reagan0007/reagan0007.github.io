@@ -1,6 +1,6 @@
 #### Futures Training
 
-- **1st Prize (one of three first prizes)**, 7th "China Merchants Futures Cup" Futures Training Camp, 2025.12 [View](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
+- **1st Prize**, 7th "China Merchants Futures Cup" Futures Training Camp, 2025.12 [View](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
 
 #### Mathematical Modeling
 
@@ -11,13 +11,13 @@
 
 #### Innovation & Entrepreneurship
 
-- **National Bronze Award**, China International College Students' Innovation Competition (core member), 2024.04
-- **Provincial Silver Award (2 items)**, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition (core member), 2023.08
+- **National Bronze Award**, China International College Students' Innovation Competition, 2024.04
+- **Provincial Silver Award (2 items)**, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2023.08
 - **West China Regional Third Prize**, 2023 Industry Integration Development - New Engineering Innovation Competition, 2023.08
 - **Provincial Bronze Award**, 8th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2022.08
 
 #### Other
 
-- **National Third Prize**, 13th "Zhengda Cup" National College Student Market Research & Analysis Competition (technical lead), 2023.04 [Report](/static/assets/pdf/无人区大盗2.0.pdf)
+- **National Third Prize**, 13th "Zhengda Cup" National College Student Market Research & Analysis Competition, 2023.04 [Report](/static/assets/pdf/无人区大盗2.0.pdf)
 - **Provincial Second Prize**, 2022 "FLTRP·Guocai Cup" National English Writing Competition, 2022.10
 - **University First Prize**, 2022 "FLTRP·Guocai Cup" National English Reading Competition, 2022.10
