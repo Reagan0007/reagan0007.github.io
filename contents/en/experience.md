@@ -1,6 +1,6 @@
 **Guoyuan Securities** - Buy-Side Investment Advisory Intern, Wealth Management Division, 2026.07-Present
 
-- Weekly asset-allocation analysis of one simulated existing client, from risk profiling through scheme design to product selection, written up as a formal report.
+- Each week, independently completed asset-allocation analysis for a simulated existing client, from risk profiling and scheme design to product selection, written up as a formal report.
 - Daily pre-market minutes, monthly industry and strategy reports, ongoing simulated-portfolio tracking, and client visits and roadshows alongside my mentor.
 - Built automated workflows for the fixed-format work (minutes drafts, data preparation), keeping my own time for analysis and the final copy.
 
@@ -8,7 +8,7 @@
 
 - Reviewed the WorldQuant Alpha101 factor library, excluding cross-sectional factors that don't fit futures markets, and selected 19 timing factors based on time-series price and volume.
 - Ran the timing-strategy backtest independently: rolling-quantile dynamic thresholds, in-sample training and out-of-sample validation on gold and 5/10/30-year treasury futures, parameter screening against an out-of-sample/in-sample Sharpe ratio > 0.6 standard, with 12 configurations passing robustness tests.
-- Automated my mentor's precious-metals daily report, cutting roughly half an hour of daily work down to minutes.
+- Automated my mentor's daily precious-metals report, cutting the roughly 20-minute process down to under 5 minutes.
 - Daily-frequency data cleaning and cross-asset analysis for gold and treasury futures; assisted with daily precious-metals market commentary, working with Wind and Bloomberg terminals.
 
 **Pan-China Certified Public Accountants (Hangzhou HQ)** - Audit Intern, 2025.01-2025.04
