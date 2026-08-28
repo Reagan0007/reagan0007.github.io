@@ -1,6 +1,9 @@
-Two kinds of research below: papers I carried from idea to final draft on my own, and funded projects I contributed to as a team member. Full texts of the papers are downloadable.
+Two kinds of research below: papers I carried from idea to final draft on my own, and funded projects I contributed to as a team member. A third group collects data and AI projects where I put engineering to work on real data. Full texts of the papers are downloadable.
 
 #### Independent Research
+
+- **Master's Thesis (in progress)** - *Tax Administration Digitalization and Executive Perquisite Consumption: Evidence from the Blockchain E-Invoice Pilot*, 2026-2027
+  - Uses the blockchain e-invoice pilot as a quasi-natural experiment, continuing my "policy pilot + firm behavior" DID research line.
 
 - **Undergraduate Thesis (awarded Outstanding)** - *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2024.11-2025.05
   - Built a multi-period difference-in-differences (DID) model around the Stock Connect launch as a quasi-natural experiment, testing whether capital-market opening disciplines controlling-shareholder tunneling. It does - the effect is significant.
@@ -14,9 +17,20 @@ Two kinds of research below: papers I carried from idea to final draft on my own
   - Processed compositional data with a Centered Log-Ratio (CLR) transformation to link ancient-glass chemistry to weathering processes.
   - Accepted by a CPCI-indexed international conference. First of three authors, responsible for data analysis and the initial draft.
 
-- **Digital Finance and the Monetary-Policy Credit Channel** - Qinghai Financial Society key project, team member, 2024.04-2024.11
+- **Digital Finance and the Monetary-Policy Credit Channel** - Qinghai Financial Society key project, responsible for the firm-level empirics, 2024.04-2024.11
   - Built fixed-effects models on 2011-2021 panel data of commercial banks and A-share listed companies.
   - Traced the bank-lending and corporate balance-sheet channels through which digital finance affects credit transmission; co-wrote the concluding report.
+
+#### Data & AI
+
+- **CPA Mobility Data Engineering** (advisor's project), 2025-2026
+  - No public data exists on how certified public accountants move between firms. Starting from lists disclosed by provincial CPA institutes, I collected 887 messy files (scans and photos included) and built an extraction pipeline: OCR to text, chunked AI extraction to JSON, and three APIs called in parallel to cross-check each other - the reconstructed registry came out over 98% accurate.
+
+- **POMO Neural TSP Solver** (Deep Learning & Large Models course project, team of four)
+  - Added DPO-style preference learning and curriculum learning on top of the POMO reinforcement-learning baseline; 0.478% optimality gap on the TSPLIB hold-out set, a ~77% relative improvement over the 2.048% baseline. Full LaTeX reports (Chinese and English) plus code.
+
+- **AI News Workflow** (personal project, n8n)
+  - Scrapes a dozen tech sites for AI news daily, normalizes it into a Feishu database via AI, picks the ten most valuable items and pushes them to a group chat.
 
 #### Project Contributions
 

@@ -1,6 +1,6 @@
 #### Futures Training
 
-- **1st Prize**, 7th "China Merchants Futures Cup" Futures Training Camp, 2025.12 [View](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
+- **1st Prize (ranked 3rd of 150+)**, 7th "China Merchants Futures Cup" Futures Training Camp, 2025.12 [View](https://mp.weixin.qq.com/s/q4xq3eZXzWiDawJwke3suA)
 
 #### Mathematical Modeling
 
