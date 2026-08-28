@@ -2,11 +2,11 @@
 
 I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology, graduating in 2027. I did my undergraduate degree in Finance at Qinghai University, finishing first in a cohort of 107.
 
-One problem stayed with me through my undergraduate years: finance theory and data felt disconnected. I could follow the models, but turning them loose on real data myself was another matter. That gap is largely what I came to graduate school to close - coursework in quantitative methods, and internships chosen for the data work in them: factor timing and backtesting at a futures firm, asset-allocation analysis at a securities firm, audit data verification at an accounting firm. Getting the data, cleaning it, modeling it, writing it up - I can now carry that whole process on my own.
+What I do, put simply: turn a business question into something data can answer, then carry it through myself, from getting the data to writing up the conclusion. All three of my internships sit on that path - factor timing and backtesting at a futures firm, client asset-allocation analysis at a securities firm, audit data verification at an accounting firm.
 
-Using AI to improve how I work is something I take seriously as well. At China Merchants Futures I automated my mentor's precious-metals daily report, cutting it from half an hour to minutes; in my current internship the fixed-format parts of my weekly deliverables run through workflows I built.
+For repetitive work I try to build automated workflows - in one internship, my mentor's daily precious-metals report went from half an hour down to minutes.
 
-I'm looking for quantitative research and data analysis roles - internships and new-graduate positions. Feel free to email me at [reagan007[at]163.com](mailto:reagan007@163.com).
+I'm currently looking at internship and new-graduate opportunities. Feel free to email me at [reagan007[at]163.com](mailto:reagan007@163.com).
 
 #### Education
 
@@ -53,6 +53,6 @@ I'm looking for quantitative research and data analysis roles - internships and 
 
 #### Beyond Work
 
-In January 2026 a friend and I cycled around Hainan Island - eight days, about 150 km a day. The decision was made on short notice and the bike arrived the day before we left, with just one 23 km practice ride in between. The legs turned out not to be the hard part; keeping the rhythm for eight straight days was.
+In January 2026 I cycled around Hainan Island in a week, about 1000 km in all. Fitness wasn't the hard part; getting back on the bike every morning was.
 
-Away from code and the bike, I'm usually playing single-player games - Elden Ring, most recently.
+Outside study and work, I like to relax with single-player games - Elden Ring, most recently.
