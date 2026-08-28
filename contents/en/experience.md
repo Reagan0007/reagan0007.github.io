@@ -1,7 +1,8 @@
-**Guoyuan Securities** - Buy-Side Investment Advisory Intern, Wealth Management Division, 2026.07-Present
+**Guoyuan Securities** - Buy-Side Investment Advisory Intern ("Yuanhui Program"), Wealth Management Division, 2026.07-Present
 
 - Each week, independently completed asset-allocation analysis for a simulated existing client, from risk profiling and scheme design to product selection, written up as a formal report.
 - Daily pre-market minutes, monthly industry and strategy reports, ongoing simulated-portfolio tracking, and client visits and roadshows alongside my mentor.
+- Wrote the Computer Equipment monthly industry report under my own analyst byline, laying out the full logic from policy and valuation to allocation.
 - Built automated workflows for the fixed-format work (minutes drafts, data preparation), keeping my own time for analysis and the final copy.
 
 **China Merchants Futures** - Quantitative Research Intern, Industry Research Division, 2026.04-2026.07

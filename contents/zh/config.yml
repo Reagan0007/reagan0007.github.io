@@ -5,10 +5,12 @@ home-subtitle: 李根&ensp;|&ensp;Reagan
 nav-home: 首页
 nav-experience: 实习经历
 nav-projects: 科研项目
+nav-coursework: 课程项目
 nav-awards: 获奖荣誉
 nav-menu-text: 菜单
 experience-subtitle: <i class="bi bi-briefcase-fill"></i>&nbsp;实习经历
 projects-subtitle: <i class="bi bi-file-text-fill"></i>&nbsp;科研项目
+coursework-subtitle: <i class="bi bi-journal-code"></i>&nbsp;课程项目
 awards-subtitle: <i class="bi bi-award-fill"></i>&nbsp;获奖荣誉
 copyright-text: '&copy; 李根 2025-2026. 保留所有权利。'
 license-link: 开源协议

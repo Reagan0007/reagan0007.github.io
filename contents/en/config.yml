@@ -5,10 +5,12 @@ home-subtitle: Reagan&ensp;|&ensp;李根
 nav-home: HOME
 nav-experience: EXPERIENCE
 nav-projects: PROJECTS
+nav-coursework: COURSEWORK
 nav-awards: AWARDS
 nav-menu-text: MENU
 experience-subtitle: <i class="bi bi-briefcase-fill"></i>&nbsp;EXPERIENCE
 projects-subtitle: <i class="bi bi-file-text-fill"></i>&nbsp;PROJECTS
+coursework-subtitle: <i class="bi bi-journal-code"></i>&nbsp;COURSEWORK
 awards-subtitle: <i class="bi bi-award-fill"></i>&nbsp;AWARDS
 copyright-text: '&copy; Reagan 2025-2026. All Rights Reserved.'
 license-link: License

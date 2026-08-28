@@ -19,5 +19,13 @@
 #### Other
 
 - **National Third Prize**, 13th "Zhengda Cup" National College Student Market Research & Analysis Competition, 2023.04 [Report](/static/assets/pdf/无人区大盗2.0.pdf)
+- **National Excellence Award**, 11th "Sharing Cup" Science & Technology Resource Sharing Service Innovation Competition, 2024.09
 - **Provincial Second Prize**, 2022 "FLTRP·Guocai Cup" National English Writing Competition, 2022.10
 - **University First Prize**, 2022 "FLTRP·Guocai Cup" National English Reading Competition, 2022.10
+
+#### Honors
+
+- **Outstanding Graduate** (university level), 2025.06
+- **Outstanding Undergraduate Thesis**, *Capital Market Liberalization and Minority Shareholder Protection*, 2025.05
+- **Yingcai Scholarship; University Merit Scholarships; Research & Innovation Scholarship**, 2022–2024
+- **Merit Student (2023), Outstanding Student Leader (2024), Outstanding Communist Youth League Member (2023–2025)**

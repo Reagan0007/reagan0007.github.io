@@ -16,7 +16,7 @@
 
 const CONTENT_DIR = '/contents/';
 const CONFIG_FILE = 'config.yml';
-const SECTIONS = ['home', 'experience', 'projects', 'awards'];
+const SECTIONS = ['home', 'experience', 'projects', 'coursework', 'awards'];
 
 const LANG_STORAGE_KEY = 'reagan-site-lang';
 
