@@ -2,9 +2,9 @@
 
 I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology, graduating in 2027. I did my undergraduate degree in Finance at Qinghai University, finishing first in a cohort of 107.
 
-What I do, put simply: turn a business question into something data can answer, then carry it through myself, from getting the data to writing up the conclusion. All three of my internships sit on that path - factor timing and backtesting at a futures firm, client asset-allocation analysis at a securities firm, audit data verification at an accounting firm.
+The way I work is simple: turn a business question into something data can answer, then take it all the way through myself - getting the data, doing the analysis, writing it up - so what I hand over is ready to use. All three internships ran that way: factor timing and backtesting at a futures firm, client asset-allocation analysis at a securities firm, audit data verification at an accounting firm.
 
-For repetitive work I try to build automated workflows - in one internship, my mentor's daily precious-metals report went from half an hour down to minutes.
+Repetitive, fixed-format work I turn into automated workflows - my mentor's daily precious-metals report went from half an hour down to minutes.
 
 I'm currently looking at internship and new-graduate opportunities. Feel free to email me at [reagan007[at]163.com](mailto:reagan007@163.com).
 
@@ -53,6 +53,6 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 
 #### Beyond Work
 
-In January 2026 I cycled around Hainan Island in a week, about 1000 km in all. Fitness wasn't the hard part; getting back on the bike every morning was.
+In January 2026 a friend and I cycled around Hainan Island in a week. The route itself is about 1000 km; with detours along the way, it came to about 150 km a day.
 
 Outside study and work, I like to relax with single-player games - Elden Ring, most recently.
