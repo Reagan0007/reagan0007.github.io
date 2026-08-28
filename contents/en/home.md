@@ -13,7 +13,7 @@ I'm currently looking for quantitative research and data analysis roles - intern
   - First-Class Academic Scholarship; Special-Class Research Assistant Stipend; UVA winter exchange in Data Science & Business Analytics, 97.6/100
 
 - **B.A., Finance (CFA Track)** - School of Finance & Economics, Qinghai University, 2021.09-2025.06
-  - Rank 1/107, GPA 4.55/5.0 (93.53/100), CET-6. Corporate Finance (98), Securities Investment (98), Advanced Mathematics (96/98), Programming in C (96), Econometrics (95), Statistics (96)
+  - Rank 1/107, GPA 4.55/5.0 (93.53/100), CET-6. Corporate Finance (98), Securities Investment (98), Advanced Mathematics (96/98), Econometrics (95), Statistics (96)
   - Yingcai Scholarship; Research & Innovation Scholarship; Outstanding Student Scholarship; Merit Student; Outstanding Graduate
 
 #### Research Interests
