@@ -14,5 +14,3 @@ Course projects from graduate school — the ones with complete deliverables.
 - **A-share dividend research** (Advanced Corporate Finance) — CSMAR 1991–2024 full-market statistics (¥2.16tn dividends, 57.68% payout in 2024), plus a 60-year literature review and an identification design.
 - **Tianfu Communication valuation** (Financial Statement Analysis) — a 42-page report from industry and moat analysis through statement restructuring to a valuation model with Excel. [Report](/viewer.html?f=天孚通信分析报告.pdf)
 - **Automated Social Science** (Games and Behavior) — worked through the paper on LLMs as social scientists and subjects, mapping out the system overview and its seven-module flow.
-
-In group projects I lean toward the hands-on side — data, modeling, and writing things up — turning conclusions into reproducible results.
