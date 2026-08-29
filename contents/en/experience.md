@@ -6,7 +6,7 @@
 
 **China Merchants Futures** - Quantitative Research Intern, Industry Research Division, 2026.04-2026.07
 
-- Reviewed the WorldQuant Alpha101 factor library, excluding cross-sectional factors that don't fit futures markets, and selected 19 timing factors based on time-series price and volume.
+- Reviewed the WorldQuant Alpha101 factor library, excluding cross-sectional factors that don't fit futures markets, and selected 19 timing factors based on time-series price and volume. [Review](https://my.feishu.cn/base/ScDSbYmssaTPRdslmydcR305nUd?table=tblS0t3MtYP3GmRw&view=vewzfxWohN3)
 - Ran the timing-strategy backtest independently: rolling-quantile dynamic thresholds, in-sample training and out-of-sample validation on gold and 5/10/30-year treasury futures, parameter screening against an out-of-sample/in-sample Sharpe ratio > 0.6 standard, with 12 configurations passing robustness tests.
 - Automated my mentor's daily precious-metals report end to end - collecting and organizing news and data, charting and tabulating, analyzing, and typesetting - cutting the roughly 30-minute process down to under 5 minutes, with the mentor only reviewing and fine-tuning at the end.
 - Daily-frequency data cleaning and cross-asset analysis for gold and treasury futures; assisted with daily precious-metals market commentary, working with Wind and Bloomberg terminals.
