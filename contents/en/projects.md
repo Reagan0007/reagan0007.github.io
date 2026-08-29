@@ -1,4 +1,4 @@
-Two kinds of research below: papers I wrote independently, full texts downloadable; and funded projects I joined as a member, one line each on my part. The data and AI section collects engineering projects from graduate school.
+Three kinds of work below: papers I wrote independently (full texts downloadable), funded projects I joined as a member (one line each on my part), and engineering projects from graduate school.
 
 #### Papers
 
@@ -16,16 +16,10 @@ Two kinds of research below: papers I wrote independently, full texts downloadab
 - **CPCI conference paper (first author)** - *Study on the Influence of Weathering Process on the Chemical Composition of Ancient Glass Based on CLR*, 2023.02-2023.07
   - Grew out of Problem C of the 2022 national mathematical-contest-in-modeling; the CLR compositional analysis was extended into an English paper after the contest and accepted by a CPCI conference.
 
-- **Digital Finance and the Monetary-Policy Credit Channel** - Qinghai Financial Society key project, responsible for the firm-level empirics, 2024.04-2024.11
-  - Fixed-effects models on 2011-2021 panel data of commercial banks and A-share listed companies, identifying how digital finance affects credit transmission via the bank-lending and corporate balance-sheet channels.
-
 #### Data & AI
 
 - **CPA mobility data engineering** (advisor's project), 2025-2026
   - No public data exists on how CPAs move between firms, so the registry had to be rebuilt from scratch. Starting from lists disclosed by provincial CPA institutes, I collected 887 files in inconsistent formats (scans and photos included) and built the pipeline: OCR to text, chunked AI extraction, three models called in parallel to cross-check each other. The reconstructed registry came out over 98% accurate.
-
-- **POMO neural TSP solver** (course project, team of four)
-  - DPO-style preference learning and curriculum learning on top of the POMO reinforcement-learning baseline; 0.478% optimality gap on the TSPLIB hold-out set, against a 2.048% baseline.
 
 - **AI news workflow** (personal project, n8n)
   - Scrapes a dozen tech sites daily for AI news, normalizes it into a database, and pushes a curated selection of ten.
@@ -36,3 +30,4 @@ Two kinds of research below: papers I wrote independently, full texts downloadab
 - **Qinghai Social Science Fund** - *Governance Capacity and Human-Resource Guarantee*: evaluation-system construction and regression analysis, 2022.05-2023.02
 - **Qinghai Development & Reform Commission** - *15th Five-Year Plan indicator system*: indicator selection and target forecasting, 2024.09-2024.11
 - **Qinghai Statistics Bureau** - *Child-population analysis from the 7th census*: data cleaning and cross-checking, 2022.10-2022.11
+- **Qinghai Financial Society key project** - *Digital Finance and the Monetary-Policy Credit Channel*: firm-level fixed-effects models, 2024.04-2024.11
