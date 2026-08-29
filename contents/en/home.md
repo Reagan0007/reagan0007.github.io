@@ -39,8 +39,6 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 <li>PyTorch</li>
 <li>scikit-learn / XGBoost</li>
 <li>Stata</li>
-<li>MATLAB</li>
-<li>Microsoft Office</li>
 <li>Bloomberg / Wind</li>
 </ul>
 

@@ -30,4 +30,4 @@ Three kinds of work below: papers I wrote independently (full texts downloadable
 - **Qinghai Social Science Fund** - *Governance Capacity and Human-Resource Guarantee*: evaluation-system construction and regression analysis, 2022.05-2023.02
 - **Qinghai Development & Reform Commission** - *15th Five-Year Plan indicator system*: indicator selection and target forecasting, 2024.09-2024.11
 - **Qinghai Statistics Bureau** - *Child-population analysis from the 7th census*: data cleaning and cross-checking, 2022.10-2022.11
-- **Qinghai Financial Society key project** - *Digital Finance and the Monetary-Policy Credit Channel*: firm-level fixed-effects models, 2024.04-2024.11
+- **Qinghai Financial Society key project** - *The Impact of Digital Finance Development on the Monetary-Policy Credit Channel: Micro-Evidence from Listed Companies*: firm-level fixed-effects models, 2024.04-2024.11
