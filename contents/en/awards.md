@@ -11,10 +11,10 @@
 
 #### Innovation & Entrepreneurship
 
-- **National Bronze Award**, China International College Students' Innovation Competition, 2024.04
-- **Provincial Silver Award (2 items)**, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2023.08
+- **National Bronze Award**, China International College Students' Innovation Competition, 2023.12
+- **Provincial Silver Award (2 items)**, 9th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2023.10
 - **West China Regional Third Prize**, 2023 Industry Integration Development - New Engineering Innovation Competition, 2023.08
-- **Provincial Bronze Award**, 8th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2022.08
+- **Provincial Bronze Award**, 8th China International "Internet+" College Students Innovation & Entrepreneurship Competition, 2022.10
 
 #### Other
 
