@@ -53,6 +53,13 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 <li>Junior Accountant</li>
 </ul>
 
+#### Languages
+
+<ul class="tag-list">
+<li>Chinese (native)</li>
+<li>English (CET-6)</li>
+</ul>
+
 #### Beyond Work
 
 I enjoy adventure. In January 2026 I took on a challenge: cycling around Hainan Island in a week - 988 km in all.
