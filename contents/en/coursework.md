@@ -10,7 +10,7 @@ Course projects from graduate school — the ones with complete deliverables.
 
 #### Research & Reports
 
-- **Mispricing factor model** (Investments) — a deep read of Stambaugh & Yuan (2017): factor construction, spanning, and arbitrage asymmetry.
-- **A-share dividend research** (Advanced Corporate Finance) — CSMAR 1991–2024 full-market statistics (¥2.16tn dividends, 57.68% payout in 2024), plus a 60-year literature review and an identification design.
-- **Tianfu Communication valuation** (Financial Statement Analysis) — a 42-page report from industry and moat analysis through statement restructuring to a valuation model with Excel. [Report](/viewer.html?f=天孚通信分析报告.pdf)
-- **Automated Social Science** (Games and Behavior) — worked through the paper on LLMs as social scientists and subjects, mapping out the system overview and its seven-module flow.
+- **Mispricing factor model** (Investments) — a deep read of Stambaugh & Yuan (2017, RFS): 11 anomaly variables clustered into management vs. performance, 2×3 double sorts, and checks of factor spanning and arbitrage asymmetry (short-leg β ≈ 2× the long leg).
+- **A-share dividend research** (Advanced Corporate Finance) — CSMAR 1991–2024 full-market statistics (¥2.16tn dividends, 57.68% payout in 2024), plus a 60-year literature review and a causal identification design for the new 'Nine Guidelines' dividend policy.
+- **Tianfu Communication valuation** (Financial Statement Analysis) — a 42-page report on this AI-computing optical-communications name: industry structure and moat, statement restructuring, and an Excel valuation model. [Report](/viewer.html?f=天孚通信分析报告.pdf)
+- **Automated Social Science** (Games and Behavior) — worked through Manning, Zhu & Horton's paper, where LLMs act as both social scientists and research subjects, automating the full pipeline from hypotheses and agent interaction to SEM evaluation.
