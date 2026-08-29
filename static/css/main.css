@@ -163,7 +163,7 @@ html[lang^="zh"] section .main-body {
     letter-spacing: 0.02em;
     /* CJK glyphs are full-width, so one em is a whole character rather than
        roughly two — the same em count carries about twice the text. */
-    max-width: 42em;
+    max-width: 43em;
 }
 
 html[lang^="zh"] section header h2 {
