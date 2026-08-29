@@ -50,29 +50,13 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            max-width: 34vw;
+            max-width: 60vw;
             color: #cfd3e8;
         }
-        #bar button {
-            background: var(--accent);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 13px;
-        }
-        #bar button:disabled { opacity: .4; cursor: default; }
-        #bar input {
-            width: 48px;
-            text-align: center;
-            border: 1px solid #555;
-            border-radius: 5px;
-            padding: 4px;
-            background: #33384a;
-            color: #fff;
-            -webkit-user-select: text;
-            user-select: text;
+        #bar .pages {
+            color: #8b90a8;
+            font-size: 12px;
+            white-space: nowrap;
         }
         #stage {
             margin: 60px auto 20px;
@@ -82,10 +66,22 @@
             flex-direction: column;
             align-items: center;
         }
-        #cv {
+        .page {
+            position: relative;
+            margin: 0 auto 14px;
             background: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
-            max-width: 100%;
+            overflow: hidden;
+        }
+        .page canvas { display: block; }
+        .page .ph {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b6bac6;
+            font-size: 13px;
         }
         #msg {
             color: #666;
@@ -108,18 +104,13 @@
         <a class="back" href="/">&larr;&nbsp;返回</a>
         <span class="title" id="title"></span>
         <span class="spacer"></span>
-        <button id="prev" disabled>&#8249;&nbsp;上一页</button>
-        <input id="page" type="number" min="1" value="1" aria-label="页码" />
-        <span>/</span>
-        <span id="total">&ndash;</span>
-        <button id="next" disabled>下一页&nbsp;&#8250;</button>
+        <span class="pages" id="pages"></span>
     </div>
 
     <div id="stage">
-        <canvas id="cv"></canvas>
         <div id="msg">加载中…</div>
     </div>
-    <div id="hint">仅供在线预览</div>
+    <div id="hint">仅供在线预览 · 上下滚动浏览全部页面</div>
 
     <script src="/static/js/pdf.min.js"></script>
     <script>
@@ -144,9 +135,9 @@
                 if (e.key === 'F12') { e.preventDefault(); }
             });
 
-            // ---- pdf.js rendering ----
             var params = new URLSearchParams(window.location.search);
             var file = params.get('f');
+            var stage = document.getElementById('stage');
             var msg = document.getElementById('msg');
 
             if (!file) {
@@ -156,81 +147,112 @@
 
             pdfjsLib.GlobalWorkerOptions.workerSrc = '/static/js/pdf.worker.min.js';
             var url = encodeURI('/static/assets/pdf/' + file);
-
-            var pdfDoc = null;
-            var pageNum = 1;
-            var total = 0;
-            var rendering = false;
-
-            var canvas = document.getElementById('cv');
-            var ctx = canvas.getContext('2d');
-            var prevBtn = document.getElementById('prev');
-            var nextBtn = document.getElementById('next');
-            var pageInput = document.getElementById('page');
-
             document.getElementById('title').textContent = file;
 
+            var pages = {}; // n -> { page, base, cv, vp, dpr, wrap, ph, rendered }
+
+            function maxW() {
+                return Math.min(920, Math.max(280, stage.clientWidth - 4));
+            }
+            function dprOf() {
+                return Math.min(2, window.devicePixelRatio || 1);
+            }
+
             function renderPage(n) {
-                rendering = true;
-                prevBtn.disabled = nextBtn.disabled = true;
-                pdfDoc.getPage(n).then(function (page) {
-                    var base = page.getViewport({ scale: 1 });
-                    var stage = document.getElementById('stage');
-                    var maxW = Math.max(280, stage.clientWidth - 4);
-                    var scale = Math.min(2.5, maxW / base.width);
-                    var vp = page.getViewport({ scale: scale });
-                    var dpr = window.devicePixelRatio || 1;
-                    canvas.width = Math.floor(vp.width * dpr);
-                    canvas.height = Math.floor(vp.height * dpr);
-                    canvas.style.width = vp.width + 'px';
-                    canvas.style.height = vp.height + 'px';
-                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-                    return page.render({ canvasContext: ctx, viewport: vp }).promise;
-                }).then(function () {
-                    rendering = false;
-                    pageNum = n;
-                    pageInput.value = n;
-                    prevBtn.disabled = (n <= 1);
-                    nextBtn.disabled = (n >= total);
-                    msg.style.display = 'none';
-                }).catch(function (err) {
-                    rendering = false;
-                    msg.style.display = 'block';
-                    msg.textContent = '渲染失败：' + (err && err.message ? err.message : err);
+                var p = pages[n];
+                if (!p || p.rendered) return;
+                p.rendered = true;
+                var ctx = p.cv.getContext('2d');
+                ctx.setTransform(p.dpr, 0, 0, p.dpr, 0, 0);
+                p.page.render({ canvasContext: ctx, viewport: p.vp }).promise.then(function () {
+                    if (p.ph) p.ph.style.display = 'none';
+                }).catch(function () {
+                    if (p.ph) p.ph.textContent = '第 ' + n + ' 页渲染失败';
                 });
             }
 
-            function go(n) {
-                if (!pdfDoc) return;
-                if (n < 1 || n > total || rendering) return;
-                renderPage(n);
-            }
-
-            prevBtn.addEventListener('click', function () { go(pageNum - 1); });
-            nextBtn.addEventListener('click', function () { go(pageNum + 1); });
-            pageInput.addEventListener('change', function () {
-                go(parseInt(pageInput.value, 10) || 1);
-            });
-            // arrow keys for navigation (unless typing in the input)
-            document.addEventListener('keydown', function (e) {
-                if (document.activeElement === pageInput) return;
-                if (e.key === 'ArrowLeft') { go(pageNum - 1); }
-                else if (e.key === 'ArrowRight') { go(pageNum + 1); }
-            });
-
-            window.addEventListener('resize', function () {
-                if (pdfDoc && !rendering) renderPage(pageNum);
-            });
+            // Lazy render: placeholders for all pages are laid out immediately so the
+            // scrollbar shows the full document; each page renders as it nears the viewport.
+            var observer = ('IntersectionObserver' in window)
+                ? new IntersectionObserver(function (entries) {
+                    entries.forEach(function (en) {
+                        if (en.isIntersecting) {
+                            observer.unobserve(en.target);
+                            renderPage(parseInt(en.target.getAttribute('data-n'), 10));
+                        }
+                    });
+                }, { rootMargin: '800px 0px' })
+                : null;
 
             pdfjsLib.getDocument(url).promise.then(function (doc) {
-                pdfDoc = doc;
-                total = doc.numPages;
-                document.getElementById('total').textContent = total;
-                pageInput.max = total;
-                renderPage(1);
+                var total = doc.numPages;
+                document.getElementById('pages').textContent = '共 ' + total + ' 页';
+                msg.style.display = 'none';
+
+                for (var n = 1; n <= total; n++) (function (num) {
+                    doc.getPage(num).then(function (page) {
+                        var base = page.getViewport({ scale: 1 });
+                        var scale = maxW() / base.width;
+                        var vp = page.getViewport({ scale: scale });
+                        var dpr = dprOf();
+
+                        var wrap = document.createElement('div');
+                        wrap.className = 'page';
+                        wrap.setAttribute('data-n', num);
+                        wrap.style.width = vp.width + 'px';
+                        wrap.style.height = vp.height + 'px';
+
+                        var cv = document.createElement('canvas');
+                        cv.width = Math.floor(vp.width * dpr);
+                        cv.height = Math.floor(vp.height * dpr);
+                        cv.style.width = vp.width + 'px';
+                        cv.style.height = vp.height + 'px';
+
+                        var ph = document.createElement('div');
+                        ph.className = 'ph';
+                        ph.textContent = '第 ' + num + ' 页加载中…';
+
+                        wrap.appendChild(cv);
+                        wrap.appendChild(ph);
+                        stage.appendChild(wrap);
+
+                        pages[num] = {
+                            page: page, base: base, cv: cv, vp: vp,
+                            dpr: dpr, wrap: wrap, ph: ph, rendered: false
+                        };
+
+                        if (observer) observer.observe(wrap);
+                        else renderPage(num); // no IntersectionObserver -> render everything
+                    });
+                })(n);
             }).catch(function (err) {
                 msg.textContent = '无法加载文档。';
                 console.error(err);
+            });
+
+            // On resize, recompute widths and re-render already-rendered pages.
+            var rsTimer = null;
+            window.addEventListener('resize', function () {
+                clearTimeout(rsTimer);
+                rsTimer = setTimeout(function () {
+                    var w = maxW(), dpr = dprOf();
+                    Object.keys(pages).forEach(function (k) {
+                        var p = pages[k];
+                        var vp = p.page.getViewport({ scale: w / p.base.width });
+                        p.vp = vp;
+                        p.dpr = dpr;
+                        p.wrap.style.width = vp.width + 'px';
+                        p.wrap.style.height = vp.height + 'px';
+                        p.cv.width = Math.floor(vp.width * dpr);
+                        p.cv.height = Math.floor(vp.height * dpr);
+                        p.cv.style.width = vp.width + 'px';
+                        p.cv.style.height = vp.height + 'px';
+                        if (p.rendered) {
+                            p.rendered = false;
+                            renderPage(parseInt(k, 10));
+                        }
+                    });
+                }, 200);
             });
         })();
     </script>
