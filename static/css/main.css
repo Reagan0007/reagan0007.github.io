@@ -140,6 +140,10 @@ section .main-body{
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 2.4rem;
+    /* Left-aligned text leaves a ragged right edge wherever CJK mixes with
+       dates, numbers and English terms; justify keeps both edges clean.
+       (Inherited by the html[lang] overrides, which don't set text-align.) */
+    text-align: justify;
     /* Cap the measure. Across the container's full 1022px the English body ran
        ~107 characters per line — half again the 65-75 that reads comfortably.
        em-based so it tracks whatever font-size the language sets. */
