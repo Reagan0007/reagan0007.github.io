@@ -70,6 +70,22 @@ function typesetMath() {
 }
 
 
+/** Open document previews (viewer/PDF) and external links in a new tab,
+ *  so the visitor doesn't lose their place. Anchors, mailto: and in-site
+ *  language links are left untouched. */
+function openDocsInNewTab() {
+    document.querySelectorAll('a[href]').forEach(a => {
+        const href = a.getAttribute('href') || '';
+        const isDoc = href.startsWith('/viewer.html') || href.startsWith('/static/assets/pdf/');
+        const isExternal = /^https?:\/\//.test(href);
+        if (isDoc || isExternal) {
+            a.setAttribute('target', '_blank');
+            a.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+}
+
+
 /** Fetch and render the config plus every section for this page's language. */
 function loadContent() {
     const base = CONTENT_DIR + PAGE_LANG + '/';
@@ -96,6 +112,7 @@ function loadContent() {
     );
 
     return Promise.all([config, ...sections]).then(() => {
+        openDocsInNewTab();
         typesetMath();
         // Section heights changed, so the scrollspy offsets are stale.
         const spy = bootstrap.ScrollSpy.getInstance(document.body);
