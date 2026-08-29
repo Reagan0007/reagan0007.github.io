@@ -7,11 +7,11 @@ Three kinds of work below: papers I wrote independently (full texts downloadable
 
 - **Undergraduate thesis (Outstanding Thesis award)** - *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2024.11-2025.05
   - A multi-period DID model around the Stock Connect launch, testing whether capital-market opening disciplines controlling-shareholder tunneling; the effect is significantly negative on tunneling.
-  - [Full text](/static/assets/pdf/资本市场开放与中小股东利益保护--来自沪港通的经验证据.pdf)
+  - [Full text](/viewer.html?f=资本市场开放与中小股东利益保护--来自沪港通的经验证据.pdf)
 
 - **Insurance Market Development and the Urban-Rural Income Gap**, 2024.03-2024.08
   - Cointegration tests and a Vector Error Correction Model (VEC) for the long-run relationship between the two.
-  - Core finding: insurance density narrows the gap while insurance depth widens it - both effects at work. [Full text](/static/assets/pdf/保障与分化：保险市场发展对城乡收入差距的双重影响.pdf)
+  - Core finding: insurance density narrows the gap while insurance depth widens it - both effects at work. [Full text](/viewer.html?f=保障与分化：保险市场发展对城乡收入差距的双重影响.pdf)
 
 - **CPCI conference paper (first author)** - *Study on the Influence of Weathering Process on the Chemical Composition of Ancient Glass Based on CLR*, 2023.02-2023.07
   - Grew out of Problem C of the 2022 national mathematical-contest-in-modeling; the CLR compositional analysis was extended into an English paper after the contest and accepted by a CPCI conference.

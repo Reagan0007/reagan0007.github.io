@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>文档预览</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+    <style>
+        :root {
+            --accent: #3948d2;
+            --bar: #22242e;
+        }
+        * {
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #e9ebf0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+        #bar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 48px;
+            background: var(--bar);
+            color: #eef;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0 14px;
+            z-index: 20;
+            font-size: 14px;
+        }
+        #bar a.back {
+            color: #c8cdee;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        #bar a.back:hover { color: #fff; }
+        #bar .spacer { flex: 1 1 auto; }
+        #bar .title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 34vw;
+            color: #cfd3e8;
+        }
+        #bar button {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        #bar button:disabled { opacity: .4; cursor: default; }
+        #bar input {
+            width: 48px;
+            text-align: center;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 4px;
+            background: #33384a;
+            color: #fff;
+            -webkit-user-select: text;
+            user-select: text;
+        }
+        #stage {
+            margin: 60px auto 20px;
+            width: calc(100% - 28px);
+            max-width: 920px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #cv {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+            max-width: 100%;
+        }
+        #msg {
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1.7;
+        }
+        #hint {
+            text-align: center;
+            color: #aab;
+            font-size: 12px;
+            padding: 0 0 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bar">
+        <a class="back" href="/">&larr;&nbsp;返回</a>
+        <span class="title" id="title"></span>
+        <span class="spacer"></span>
+        <button id="prev" disabled>&#8249;&nbsp;上一页</button>
+        <input id="page" type="number" min="1" value="1" aria-label="页码" />
+        <span>/</span>
+        <span id="total">&ndash;</span>
+        <button id="next" disabled>下一页&nbsp;&#8250;</button>
+    </div>
+
+    <div id="stage">
+        <canvas id="cv"></canvas>
+        <div id="msg">加载中…</div>
+    </div>
+    <div id="hint">仅供在线预览</div>
+
+    <script src="/static/js/pdf.min.js"></script>
+    <script>
+        (function () {
+            // ---- Deterrents: block download / copy / Ctrl shortcuts ----
+            document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+            document.addEventListener('copy', function (e) { e.preventDefault(); });
+            document.addEventListener('cut', function (e) { e.preventDefault(); });
+            document.addEventListener('dragstart', function (e) { e.preventDefault(); });
+            document.addEventListener('keydown', function (e) {
+                var k = (e.key || '').toLowerCase();
+                if (e.ctrlKey || e.metaKey) {
+                    // block Ctrl/Cmd + C S P A U X V F G
+                    if (['c', 's', 'p', 'a', 'u', 'x', 'v', 'f', 'g'].indexOf(k) !== -1) {
+                        e.preventDefault();
+                    }
+                    // block Ctrl/Cmd + Shift + I / C / S / P (dev tools, etc.)
+                    if (e.shiftKey && ['i', 'c', 's', 'p'].indexOf(k) !== -1) {
+                        e.preventDefault();
+                    }
+                }
+                if (e.key === 'F12') { e.preventDefault(); }
+            });
+
+            // ---- pdf.js rendering ----
+            var params = new URLSearchParams(window.location.search);
+            var file = params.get('f');
+            var msg = document.getElementById('msg');
+
+            if (!file) {
+                msg.textContent = '缺少文件参数。';
+                return;
+            }
+
+            pdfjsLib.GlobalWorkerOptions.workerSrc = '/static/js/pdf.worker.min.js';
+            var url = encodeURI('/static/assets/pdf/' + file);
+
+            var pdfDoc = null;
+            var pageNum = 1;
+            var total = 0;
+            var rendering = false;
+
+            var canvas = document.getElementById('cv');
+            var ctx = canvas.getContext('2d');
+            var prevBtn = document.getElementById('prev');
+            var nextBtn = document.getElementById('next');
+            var pageInput = document.getElementById('page');
+
+            document.getElementById('title').textContent = file;
+
+            function renderPage(n) {
+                rendering = true;
+                prevBtn.disabled = nextBtn.disabled = true;
+                pdfDoc.getPage(n).then(function (page) {
+                    var base = page.getViewport({ scale: 1 });
+                    var stage = document.getElementById('stage');
+                    var maxW = Math.max(280, stage.clientWidth - 4);
+                    var scale = Math.min(2.5, maxW / base.width);
+                    var vp = page.getViewport({ scale: scale });
+                    var dpr = window.devicePixelRatio || 1;
+                    canvas.width = Math.floor(vp.width * dpr);
+                    canvas.height = Math.floor(vp.height * dpr);
+                    canvas.style.width = vp.width + 'px';
+                    canvas.style.height = vp.height + 'px';
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                    return page.render({ canvasContext: ctx, viewport: vp }).promise;
+                }).then(function () {
+                    rendering = false;
+                    pageNum = n;
+                    pageInput.value = n;
+                    prevBtn.disabled = (n <= 1);
+                    nextBtn.disabled = (n >= total);
+                    msg.style.display = 'none';
+                }).catch(function (err) {
+                    rendering = false;
+                    msg.style.display = 'block';
+                    msg.textContent = '渲染失败：' + (err && err.message ? err.message : err);
+                });
+            }
+
+            function go(n) {
+                if (!pdfDoc) return;
+                if (n < 1 || n > total || rendering) return;
+                renderPage(n);
+            }
+
+            prevBtn.addEventListener('click', function () { go(pageNum - 1); });
+            nextBtn.addEventListener('click', function () { go(pageNum + 1); });
+            pageInput.addEventListener('change', function () {
+                go(parseInt(pageInput.value, 10) || 1);
+            });
+            // arrow keys for navigation (unless typing in the input)
+            document.addEventListener('keydown', function (e) {
+                if (document.activeElement === pageInput) return;
+                if (e.key === 'ArrowLeft') { go(pageNum - 1); }
+                else if (e.key === 'ArrowRight') { go(pageNum + 1); }
+            });
+
+            window.addEventListener('resize', function () {
+                if (pdfDoc && !rendering) renderPage(pageNum);
+            });
+
+            pdfjsLib.getDocument(url).promise.then(function (doc) {
+                pdfDoc = doc;
+                total = doc.numPages;
+                document.getElementById('total').textContent = total;
+                pageInput.max = total;
+                renderPage(1);
+            }).catch(function (err) {
+                msg.textContent = '无法加载文档。';
+                console.error(err);
+            });
+        })();
+    </script>
+</body>
+
+</html>
