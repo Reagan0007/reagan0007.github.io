@@ -26,6 +26,6 @@
 #### Honors
 
 - **Outstanding Graduate**, 2025.06
-- **Outstanding Undergraduate Thesis**, *Capital Market Liberalization and Minority Shareholder Protection*, 2025.05
+- **Outstanding Undergraduate Thesis**, *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2025.05
 - **Yingcai Scholarship; University Merit Scholarships; Research & Innovation Scholarship**, 2022–2024
 - **Merit Student (2023), Outstanding Student Leader (2024), Outstanding Communist Youth League Member (2023–2025)**
