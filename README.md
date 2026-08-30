@@ -19,8 +19,9 @@ contents/
     home.md           bio, education, skills, certifications
     experience.md     internships
     projects.md       research projects
+    coursework.md     graduate course projects
     awards.md         competitions and honors
-  zh/                 中文内容 (same five files)
+  zh/                 中文内容 (same six files)
 static/
   assets/pdf/         resume PDFs and paper/competition attachments
   assets/img/         photo and background images
