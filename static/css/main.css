@@ -514,3 +514,94 @@ ul.tag-list li {
 }
 
 
+/* ── Phones (WeChat in-app browser) ─────────────────────────────────────────
+   The sheet above assumes a ~1000px container. Below 768px that breaks in
+   three places: px-5 gutters eat 96px of a 375px screen, 5rem section
+   padding + a 25rem hero push the first real content below the fold, and
+   justified 1.18rem CJK at ~14 characters a line stretches into rivers. */
+
+@media screen and (max-width: 767.98px) {
+
+    /* 48px a side is a quarter of the viewport — 20px gutters give the body
+       ~20 characters a line instead of ~14. !important: Bootstrap's spacing
+       utilities carry it too, and an !important rule only loses to a
+       more-specific !important rule. */
+    .container.px-5 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    /* Shrink the hero from 400px to ~272px so the intro starts one scroll
+       earlier; the photo still carries the top of the page. */
+    .top-section {
+        padding: 6rem 0;
+        height: 17rem;
+    }
+
+    /* display-3 (36.8px) wraps "金融 × 数据 × AI" / "Finance × Data × AI"
+       onto two awkward lines here; 2rem + tighter tracking keeps each
+       headline to one (≈290/≈317px against 335px available). */
+    .top-section h2 {
+        font-size: 2rem;
+        letter-spacing: 0.08em;
+    }
+
+    html[lang^="zh"] .top-section h2 {
+        letter-spacing: 0.2em;
+    }
+
+    /* Avatar: right-floating over a 335px column reads as an obstacle with
+       dead space beside it. Centre it on the hero/home seam instead; the
+       padding-top on #home reserves the space the lower half hangs into. */
+    #avatar {
+        float: none;
+        top: -60px;
+    }
+
+    #avatar img {
+        display: block;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #home {
+        padding-top: 4.5rem;
+    }
+
+    section header h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    html[lang^="zh"] section header h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Body: left-align — justify rivers badly at this measure — and step
+       size/leading down so a screen carries meaningfully more text. */
+    section .main-body {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        text-align: left;
+    }
+
+    html[lang^="zh"] section .main-body {
+        font-size: 1.05rem;
+        line-height: 1.85;
+    }
+
+    section .main-body h4 {
+        margin: 1.6rem 0 0.7rem;
+    }
+
+    #experience-md > p {
+        margin: 1.25rem 0 0.45rem;
+    }
+}
+
+
