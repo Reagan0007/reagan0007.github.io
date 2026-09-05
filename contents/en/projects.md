@@ -18,7 +18,7 @@ Three kinds of work below: papers I wrote independently (full texts downloadable
 
 #### Data & AI
 
-- **CPA mobility data engineering** (advisor's project), 2025-2026
+- **CPA mobility data engineering** (advisor's project), 2026.04-2026.06
   - No public data exists on how CPAs move between firms, so the registry had to be rebuilt from scratch. Starting from lists disclosed by provincial CPA institutes, I collected 887 files in inconsistent formats (scans and photos included) and built the pipeline: OCR to text, chunked AI extraction, three models called in parallel to cross-check each other. The reconstructed registry came out over 98% accurate.
 
 - **AI news workflow** (personal project, n8n)
