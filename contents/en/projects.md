@@ -22,7 +22,7 @@ Three kinds of work below: papers I wrote independently (full texts downloadable
   - No public data exists on how CPAs move between firms, so the registry had to be rebuilt from scratch. Starting from lists disclosed by provincial CPA institutes, I collected 887 files in inconsistent formats (scans and photos included) and built the pipeline: OCR to text, chunked AI extraction, three models called in parallel to cross-check each other. The reconstructed registry came out over 98% accurate.
 
 - **AI news workflow** (personal project, n8n)
-  - Scrapes a dozen tech sites daily for AI news, normalizes it into a database, and pushes a curated selection of ten.
+  - Scrapes a dozen tech sites every morning for AI news and uses a large model to structure it into Feishu multi-dimensional tables, then auto-picks the 6 highest-value stories, generates an AI illustration for each, and assembles them into a morning-briefing poster - pushed to a Feishu group at 08:30 sharp, with a WeChat Official Account blast and an analytics dashboard on the side.
 
 #### Project Contributions
 
