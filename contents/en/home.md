@@ -16,7 +16,7 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
   - First-Class Academic Scholarship; Special-Class Research Assistant Stipend; UVA winter exchange in Data Science & Business Analytics, 97.6/100
 
 - **B.A., Finance (CFA Track)** - School of Finance & Economics, Qinghai University, 2021.09-2025.06
-  - Rank 1/107, average 93.53/100
+  - Rank 1/107, average 93.5/100
   - Core coursework: Corporate Finance (98), Securities Investment (98), Advanced Mathematics (98), Econometrics (95), Statistics (96), Accounting Principles (97), Linear Algebra (97), College Computer Science (99)
   - Yingcai Scholarship; Research & Innovation Scholarship; Outstanding Graduate
 
