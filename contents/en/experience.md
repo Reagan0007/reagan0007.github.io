@@ -1,4 +1,4 @@
-**Guoyuan Securities** - Buy-Side Investment Advisory Intern ("Yuanhui Program"), Wealth Management Division, 2026.07-Present
+**Guoyuan Securities** - Buy-Side Investment Advisory Intern ("Yuanhui Program"), 2026.07-2026.09
 
 - Each week, independently completed asset-allocation analysis for a simulated existing client, from risk profiling and scheme design to product selection, written up as a formal report.
 - Daily pre-market minutes, monthly industry and strategy reports, ongoing simulated-portfolio tracking, and client visits and roadshows alongside my mentor.
