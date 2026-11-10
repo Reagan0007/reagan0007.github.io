@@ -11,9 +11,11 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 #### Education
 
 - **M.S., Finance** - School of Business, Southern University of Science and Technology, 2025.09-2027.07
-  - GPA 3.66/4.0
+  - GPA 3.66/4.0, major rank 2/31
   - Core coursework: Quantitative Investment (A+), Mathematical Finance (A+), Advanced Financial Risk Management (A+), Games and Behavior (A+), Investments (A-), Advanced Corporate Finance (A-), Financial Statement Analysis (A-), Financial Time Series Analysis (A-)
-  - BYD Scholarship; Special-Class Academic Scholarship; Special-Class Research Assistant Stipend; UVA winter exchange in Data Science & Business Analytics, 97.6/100; UC Riverside summer exchange in AI & Data Science in Business Decision-Making, 100/100
+  - Honors: BYD Scholarship; Special-Class Academic Scholarship; Special-Class Research Assistant Stipend
+  - Exchange: UVA winter exchange in Data Science & Business Analytics, 97.6/100 (Jan-Feb 2026)
+  - Exchange: UC Riverside summer exchange in AI & Data Science in Business Decision-Making, 100/100 (Aug 2026)
 
 - **B.A., Finance (CFA Track)** - School of Finance & Economics, Qinghai University, 2021.09-2025.06
   - Rank 1/107, average 93.5/100
@@ -45,9 +47,10 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
 #### Certifications
 
 <ul class="tag-list">
+<li>Securities Practitioner</li>
+<li>Securities Investment Advisor</li>
 <li>Futures Practitioner</li>
 <li>Fund Practitioner</li>
-<li>Securities Practitioner</li>
 <li>Junior Accountant</li>
 </ul>
 
