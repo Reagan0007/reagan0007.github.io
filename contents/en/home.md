@@ -1,6 +1,6 @@
 [Download CV](/static/assets/pdf/Reagan_Li_CV_EN.pdf)
 
-I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology, graduating in 2027. I did my undergraduate degree in Finance at Qinghai University, finishing first in a cohort of 107.
+I'm Reagan Li, a Finance master's student at the School of Business, Southern University of Science and Technology (ranked 2/31 in my major), graduating in 2027. I did my undergraduate degree in Finance at Qinghai University, finishing first in a cohort of 107.
 
 The way I work is to first think the process through - what steps it takes and where each step can be improved - then carry it out step by step. All three internships have involved data work: factor timing and backtesting at a futures firm, client asset-allocation analysis at a securities firm, audit data verification at an accounting firm.
 
@@ -15,9 +15,9 @@ I'm currently looking at internship and new-graduate opportunities. Feel free to
   - Core coursework: Quantitative Investment (A+), Mathematical Finance (A+), Advanced Financial Risk Management (A+), Games and Behavior (A+), Investments (A-), Advanced Corporate Finance (A-), Financial Statement Analysis (A-), Financial Time Series Analysis (A-)
   - Honors: BYD Scholarship; Special-Class Academic Scholarship; Special-Class Research Assistant Stipend
   - Exchange: UVA winter exchange in Data Science & Business Analytics, 97.6/100 (Jan-Feb 2026)
-  - Exchange: UC Riverside summer exchange in AI & Data Science in Business Decision-Making, 100/100 (Aug 2026)
+  - Exchange: UC Riverside summer exchange in AI & Data Science in Business Decision-Making, 100/100 (Jul-Aug 2026)
 
-- **B.A., Finance (CFA Track)** - School of Finance & Economics, Qinghai University, 2021.09-2025.06
+- **B.A., Finance CFA** - School of Finance & Economics, Qinghai University, 2021.09-2025.06
   - Rank 1/107, average 93.5/100
   - Core coursework: Corporate Finance (98), Securities Investment (98), Advanced Mathematics (98), Econometrics (95), Statistics (96), Accounting Principles (97), Linear Algebra (97), College Computer Science (99)
   - Yingcai Scholarship; Research & Innovation Scholarship; Outstanding Graduate
