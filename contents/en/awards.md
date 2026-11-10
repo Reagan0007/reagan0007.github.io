@@ -25,7 +25,7 @@
 
 #### Honors
 
-- **BYD Scholarship; Special-Class Academic Scholarship; Special-Class Research Assistant Stipend** (Master's), 2025–2026
+- **BYD Scholarship; Special-Class Academic Scholarship; Special-Class Research Assistant Stipend**, 2025–2026
 - **Outstanding Graduate**, 2025.06
 - **Outstanding Undergraduate Thesis**, *Capital Market Liberalization and Minority Shareholder Protection: Evidence from the Shanghai-Hong Kong Stock Connect*, 2025.05
 - **Yingcai Scholarship; University Merit Scholarships; Research & Innovation Scholarship**, 2022–2024
